@@ -25,6 +25,23 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 6px; }
 }
 .home-content { width: 100%; max-width: 1120px; margin: 0 auto; }
 .home-header { text-align: center; margin-bottom: 64px; }
+.home-gallery {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+  gap: clamp(48px, 10vh, 120px);
+  max-width: 960px;
+  margin: 0 auto;
+}
+.home-gallery img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 85vh;
+  max-height: 85svh;
+  object-fit: contain;
+}
 h1 {
   font-family: inherit;
   font-weight: 400;
